@@ -31,6 +31,7 @@ choco install -y pip
 choco install -y openssh
 choco install -y wget
 choco install -y ack
+choco install -y openssl.light
 
 # choco install unity
 # choco install nmap
