@@ -1,4 +1,10 @@
-# Base Applications
+# prereqs:
+# - ExecutionPolicy can't be set to Restricted
+# - run in administrative cli
+# - set execution policy and install chocolatey:
+# 		Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+#
+# base
 choco install -y googlechrome
 choco install -y skype
 choco install -y notepadplusplus
@@ -6,7 +12,7 @@ choco install -y slack
 choco install -y f.lux
 choco install -y greenshot
 
-# Dev Environment Applications
+# dev
 choco install -y conemu
 choco install -y git
 choco install -y putty
@@ -21,8 +27,7 @@ choco install -y visualstudiocode
 choco install -y docker-for-windows
 choco install -y docker-compose
 
-# Command line utilities
-# Linux-like environment on Windows
+# cli utilities + linux-like environment on windows
 choco install -y nano
 choco install -y sudo
 choco install -y curl
@@ -33,12 +38,15 @@ choco install -y wget
 choco install -y ack
 choco install -y openssl.light
 
-# choco install unity
-# choco install nmap
-# choco install mongodb
-# choco install elasticsearch
-# choco install nginx
+# configure windows display settings
+displayswitch/extend Extend screen
 
+# set ExecutionPolicy back to Restricted once script is complete
+Set-ExecutionPolicy Restricted
 
-
-
+# manual TODO:
+# - make Chrome default browser, sign-in and import bookmarks
+# - connect computer to work domain
+# - verify BitLocker is turned ON
+# - change display of second monitor to text size of 175%
+# - enable remote connections
