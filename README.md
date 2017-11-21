@@ -1,4 +1,6 @@
-# Development Environment Setup (PowerShell script)
+# dev environment setup
+
+PowerShell script to setup a new Windows computer with commonly used development tools and settings specific to my environment.
 
 ## prereqs
 
