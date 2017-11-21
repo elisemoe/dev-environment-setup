@@ -1,9 +1,3 @@
-# prereqs:
-# - ExecutionPolicy can't be set to Restricted
-# - run in administrative cli
-# - set execution policy and install chocolatey:
-# 		Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-#
 # base
 choco install -y googlechrome
 choco install -y skype
